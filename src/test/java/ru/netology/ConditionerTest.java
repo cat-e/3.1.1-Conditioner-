@@ -30,8 +30,8 @@ public class ConditionerTest {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(25);
         conditioner.setMinTemperature(16);
-        conditioner.setCurrentTemperature(23);
+        conditioner.setCurrentTemperature(15);
         conditioner.decreaseCurrentTemperature();
-        assertEquals(22, conditioner.getCurrentTemperature());
+        assertEquals(0, conditioner.getCurrentTemperature());
     }
 }

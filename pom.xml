@@ -29,7 +29,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-                <configuration>
+                                <configuration>
                     <failIfNoTests>true</failIfNoTests>
                 </configuration>
             </plugin>
@@ -47,6 +47,7 @@
                 </execution>
                 <execution>
                     <id>report</id>
+                    <phase>verify</phase>
                     <goals>
                         <goal>report</goal>
                     </goals>
